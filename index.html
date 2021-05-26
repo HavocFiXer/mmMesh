@@ -118,9 +118,9 @@
 
 <html>
 <head>
-	<title>This is my paper title</title>
-	<meta property="og:image" content="Path to my teaser.png"/> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
-	<meta property="og:title" content="Creative and Descriptive Paper Title." />
+	<title>mmMesh</title>
+	<meta property="og:image" content="./resources/teaser.jpg"/> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
+	<meta property="og:title" content="mmMesh: Towards 3D Real-Time Dynamic Human Mesh Construction Using Millimeter-Wave" />
 	<meta property="og:description" content="Paper description." />
 
 	<!-- Get from Google Analytics -->
@@ -181,7 +181,7 @@
 			<tr>
 				<td width=260px>
 					<center>
-						<img class="round" style="width:500px" src="./resources/teaser.png"/>
+						<img class="round" style="width:500px" src="./resources/teaser.jpg"/>
 					</center>
 				</td>
 			</tr>
@@ -201,13 +201,14 @@
 		<center><h1>Abstract</h1></center>
 		<tr>
 			<td>
-				This is my abstract.
+                In this paper, we present mmMesh, the first real-time 3D human mesh estimation system using commercial portable millimeterwave devices. mmMesh is built upon a novel deep learning framework that can dynamically locate the moving subject and capture his/her body shape and pose by analyzing the 3D point cloud generated from the mmWave signals that bounce off the human body. The proposed deep learning framework addresses a series of challenges. First, it encodes a 3D human body model, which enables mmMesh to estimate complex and realistic-looking 3D human meshes from sparse point clouds. Second, it can accurately align the 3D points with their corresponding body segments despite the influence of ambient points as well as the error-prone nature and the multi-path effect of the RF signals. Third, the proposed model can infer missing body parts from the information of the previous frames. Our evaluation results on a commercial mmWave sensing testbed show that our mmMesh system can accurately localize the vertices on the human mesh with an average error of 2.47 cm. The superior experimental results demonstrate the effectiveness of our proposed human mesh construction system.
 			</td>
 		</tr>
 	</table>
 	<br>
 
 	<hr>
+    <!--
 	<center><h1>Talk</h1></center>
 	<p align="center">
 		<iframe width="660" height="395" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
@@ -223,6 +224,7 @@
 		</tr>
 	</table>
 	<hr>
+    -->
 
 	<center><h1>Code</h1></center>
 
@@ -238,7 +240,7 @@
 		<tr>
 			<td align=center width=400px>
 				<center>
-					<td><img class="round" style="width:450px" src="./resources/method_diagram.png"/></td>
+					<td><img class="round" style="width:450px" src="./resources/model.png"/></td>
 				</center>
 			</td>
 		</tr>
@@ -247,7 +249,7 @@
 		<center>
 			<tr>
 				<td>
-					Short description if wanted
+                    Coming soon ...
 				</td>
 			</tr>
 		</center>
