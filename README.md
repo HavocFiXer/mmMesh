@@ -23,7 +23,7 @@ The structure of the repository is listed as following:
 │   ├── network.py
 │   ├── smpl_utils_extend.py
 │   └── train_model.py
-├── History.md
+├── HISTORY.md
 ├── LICENSE
 ├── README.md
 └── .gitignore
