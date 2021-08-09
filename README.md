@@ -8,6 +8,7 @@ Last Update Date: Jun 30 2021
 
 This repository includes:
 - The UDP-based real-time TI mmWave radar data capture code of mmMesh system.
+- The code for the point cloud generation from binary file of mmWave radar (Note that the binary file should not have packet head).
 - The Pytorch implementation of mmMesh deep model.
 
 The structure of the repository is listed as following:
@@ -17,7 +18,10 @@ The structure of the repository is listed as following:
 ├── 1.mmWave_data_capture
 │   ├── capture.py
 │   └── steaming.py
-├── 2.deep_model
+├── 2.point_cloud_generation
+│   ├── configuration.py
+│   └── pc_generation.py
+├── 3.deep_model
 │   ├── data.py
 │   ├── infer_model.py
 │   ├── network.py
@@ -47,7 +51,16 @@ In **steaming.py**, the methods in the class will automatically collect the pack
 python capture.py 5
 ```
 
-## 2. mmMesh Deep Model
+## 2. Point Cloud Generation from Binary mmWave Data
+
+The methods in **pc_generation** allows you to generate the point cloud from the binary mmWave radar.For example, if you want to generate the point cloud data from `test.bin` for 10 frames, try:
+``` bash
+python pc_generation.py test.bin 10
+```
+
+**Note**: to successfully read the data from the binary file, you should change the radar configuration to generation the binary file without the packet head.
+
+## 3. mmMesh Deep Model
 
 Model training:
 ``` bash

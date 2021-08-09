@@ -1,3 +1,13 @@
+## 08-08-2021 (V1.1)
+- Release code in folder `2.point_cloud_generation` for the point cloud generation from binary file of mmWave radar (no packet head)
+- The structure of the added folder is as following:
+```
+├── 2.point_cloud_generation
+│   ├── configuration.py
+│   └── pc_generation.py
+```
+- Change the folder name from `2.deep_model` to `3.deep_model`
+
 ## 06-30-2021 (V1.0)
 
 - Release the repository as following:
