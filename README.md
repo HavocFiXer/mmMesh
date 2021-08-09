@@ -58,7 +58,7 @@ The methods in **pc_generation** allows you to generate the point cloud from the
 python pc_generation.py test.bin 10
 ```
 
-**Note**: to successfully read the data from the binary file, you should change the radar configuration to generation the binary file without the packet head.
+**Note**: to successfully read the data from the binary file, you should change the radar configuration to generate the binary file without the packet head.
 
 ## 3. mmMesh Deep Model
 
