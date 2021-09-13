@@ -1,3 +1,13 @@
+## 08-08-2021 (V1.2)
+- Release `DataCaptureDemo_1843new.lua` in folder `1.mmWave_data_capture`.
+- Add a simple tutorial to explain how to enable real-time data steaming.
+- The structure of the added folder is as following:
+```
+├── 1.mmWave_data_capture
+│   ├── DataCaptureDemo_1843new.lua
+```
+
+
 ## 08-08-2021 (V1.1)
 - Release code in folder `2.point_cloud_generation` for the point cloud generation from binary file of mmWave radar (no packet head)
 - The structure of the added folder is as following:
