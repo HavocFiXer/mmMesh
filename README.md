@@ -49,9 +49,9 @@ to generate two files: **smpl_f.pkl** and **smpl_m.pkl**.
 
 To enable real-time data capturing, the first step is to start the radar in **Windows**. The softwave used in the paper is `mmWave Studio 2.0.0.2`. Just load **DataCaptureDemo\_1843new.lua** and click the **Run!** button on the left bottom corner of the softwave as show in the image.
 ![mmWave Studio](mmwave_studio.png)
-Then the radar will keep sending the chrips and steaming the data through networking cables.
+Then the radar will keep sending the chirps and steaming the data through networking cables.
 
-Then, change the operation system of the computer to **Ubuntu** or unplug the cable on the **Windows** machine (you used to start the radar) and connect the cable to a **Ubuntu** machine. (**Note**: all the Python files are executed on a **Ubuntu** machine during our experiments.)
+Then, change the operating system of the computer to **Ubuntu**, or unplug the cable on the **Windows** machine (you used to start the radar) and connect the cable to a **Ubuntu** machine. (**Note**: all the Python files are executed on a **Ubuntu** machine during our experiments.)
 
 In **Ubuntu**, you will use **steaming.py**. The methods in the class will automatically collect the packets from the radar and assemble them into frames. It also allows you to access these frames using `getFrame` method. As an example, if you want to capture the data from the mmWave radar for 5 mins and store them, just run:
 ``` bash
