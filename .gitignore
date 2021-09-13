@@ -8,7 +8,6 @@
 *.npz
 *.tga
 *.mp4
-*.png
 *.pth
 *.jpg
 *.jpeg
