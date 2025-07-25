@@ -124,7 +124,7 @@ def naive_xyz(virtual_ant, num_tx=3, num_rx=4, fft_size=64): #
     elevation_ant_padded[:num_rx, :] = elevation_ant
 
     # Process elevation information
-    elevation_fft = np.fft.fft(elevation_ant, axis=0)
+    elevation_fft = np.fft.fft(elevation_ant_padded, axis=0)
     elevation_max = np.argmax(np.log2(np.abs(elevation_fft)), axis=0)  # shape = (num_detected_obj, )
     peak_2 = np.zeros_like(elevation_max, dtype=np.complex_)
     for i in range(len(elevation_max)):
